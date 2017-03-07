@@ -1,0 +1,150 @@
+/* ============================================================
+Lightpoint Dental CSS
+
+Thanks:
+================
+
+- Brian Talbot (http://www.brian-talbot.com) for the organizational scheme and utility helpers... you're the Obi-Wan of FED, dude.
+- Jeff Starr at Perishable Press for the updated clearfix code.
+
+Notes:
+================
+
+- Based on 940px width, 16 Columns, 20px Gutters
+
+/* ------------------------------------------------------------
++Reset Styles
+------------------------------------------------------------ */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,blockquote,th,td {margin: 0; padding: 0;}
+table {border-collapse: collapse; border-spacing: 0;}
+img {border: 0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal; font-weight:normal;}
+ol,ul {list-style: none;}
+caption,th {text-align: left;}
+h1,h2,h3,h4,h5,h6 {font-size: 100%; font-weight: normal;}
+q:before,q:after {content: '';}
+abbr,acronym {border: 0;}
+fieldset {border: 0; margin: 0; padding: 0;}
+
+/* ------------------------------------------------------------
++General
+------------------------------------------------------------ */
+
+body {background: #f4f4e4 url(../i/presentation/bg.jpg);}
+#wrapwrap {background: url(../i/presentation/bg_grad.png) top center repeat-x;}
+a, a:visited {color: #358dbd; text-decoration: none;}
+a:hover {text-decoration: underline;}
+.action a {color: #bf6a80; font-weight: bold;}
+.nav li a:hover, 
+.homepage .nav1 a,
+.aboutus .nav2 a,
+.services .nav3 a, 
+.contact .nav4 a {background: #53a8c3 url(../i/presentation/bar_bg.png) bottom center repeat-x; text-decoration: none;}
+#gmap_action a {color: #bf6a80!important;}
+/*Add the chevrons after each "action" link*/
+.action a:after {content: "\00a0\00bb";}
+#header_logo {background: url(../i/presentation/header_logo.png) no-repeat; height: 92px; width: 427px;}
+
+
+/* ------------------------------------------------------------
++Layout
+------------------------------------------------------------ */
+
+#wrap {background: url(../i/presentation/lightburst.png) top right no-repeat; margin: 0 auto; padding: 20px 20px 0; width: 940px;}
+.nav, h2 {background: url(../i/presentation/bar_bg.png) bottom center repeat-x; 
+   -moz-border-radius: 7px; 
+-webkit-border-radius: 7px; 
+        border-radius: 7px;
+margin-bottom: 35px; 
+}
+.nav {background-color: #8fc9da; border: 1px solid #8fb6c2; margin-bottom: 40px;}
+h2 {background-color: #b8a9c5; border: 1px solid #968ba1;}
+#header_logo {border: 0; margin-bottom: 40px; padding: 0;}
+.nav li {background: url(../i/presentation/nav_div.gif) no-repeat bottom right; float: left; padding-right: 1px;}
+.nav li a {display: block; padding: 12px 30px;}
+.subsection {clear: both; margin-bottom: 60px;}
+h2 {background: #b8a9c5 url(../i/presentation/bar_bg.png) bottom center repeat-x; padding: 10px 30px;}
+dt {float: left; width: 100px;}
+dd {clear: right; margin-bottom: 5px;}
+#gmap, img {border-color: #d9d9c9; border: 6px solid rgba(0,0,0,.08);}
+#gmap {margin-bottom: 5px;}
+.street-address, .extended-address{display: block; margin-bottom: 5px;}
+.tel {margin-bottom: 5px;}
+
+/* Layout Types */
+.subset_a {float: left; margin-right: 20px;}
+.layout_b .subset_b {float: right;}
+.layout_b .subset_a {width: 460px;}
+.layout_b div h3 {margin-top: 20px;}
+.layout_b div h3:first-child {margin-top: 0;}
+.subsubset_a {float: left; width: 240px; margin-right: 20px;}
+.subsubset_b {float: right; width: 200px;}
+
+/* Section-specific layouts */
+.homepage .layout_a .subset_a img {margin-top: 10px;}
+.homepage .adr {margin-bottom: 15px;}
+.homepage h1 {margin-bottom: 17px;}
+.homepage .layout_a .subset_b p {margin-bottom: 15px; line-height: 1.45;}
+.aboutus .subsection img {float: left; margin: 7px 20px 20px 0;}
+.aboutus .subsection > div {clear: both; margin-bottom: 20px;}
+.aboutus h1, .contact h1 {margin-bottom: 15px;}
+#teamphoto {display: block; margin-bottom: 60px;}
+.contact dl, .contact .adr {margin-bottom: 20px;}
+#contactmap {margin: 7px 20px 0 0;}
+.contact #gmap {height: 329px; width: 650px;}
+#lp_exterior {float: left; margin: 0 20px 20px 0;}
+#servicelist li {list-style: disc inside none; margin-bottom: 15px;}
+
+/* ------------------------------------------------------------
++Typography
+------------------------------------------------------------ */
+
+body {color: #333; font-family: arial, sans-serif; font-size: 62.5%;}
+strong {font-weight: bold;}
+em {font-style: italic;}
+.nav a, h3, .contact h5 {font-family: 'helvetica neue', helvetica, arial, sans-serif;}
+.nav a, h2 {text-shadow: 1px 1px 0px #666;}
+.nav a, p, dl, .vcard, #servicelist li {font-size: 1.6em;}
+h1 {color: #5d4d2f; font-size: 4.6em; letter-spacing: -1px; margin-bottom: 20px;}
+h2 {color: #fff; font-size: 3em; letter-spacing: -1px;}
+h3, .contact h5 {color: #59a7be; font-size: 2.4em; font-weight: bold; margin-bottom: 10px;}
+.contact h5 {font-size: 1.5em;}
+p {line-height: 1.6; margin-bottom: 20px;}
+.caption {font-style: italic;}
+dt {font-weight: bold;}
+
+h1, h2 {font-family: 'MuseoSlab500', helvetica, arial, sans-serif;}
+.nav li a {color: #fff; font-weight: bold; text-transform: uppercase;}
+.tel .type {font-weight: bold;}
+
+
+/* ------------------------------------------------------------
++Javascript-enabled
+------------------------------------------------------------ */
+
+.wf-active h1, 
+.wf-active h2 {visibility: visible;}
+
+.wf-loading h1, 
+.wf-loading h2 {visibility: hidden;}
+
+/* ------------------------------------------------------------
++Misc
+------------------------------------------------------------ */
+
+/*Fix Google's stupid 3px margin at the top of their embedded maps*/
+#gmap {height: 515px; width: 448px; overflow: hidden;}
+#gmap iframe {margin-top: -3px;}
+
+/* ------------------------------------------------------------
++Utilities
+------------------------------------------------------------ */
+
+/* Perishable Press clearfix - http://perishablepress.com/press/2009/12/06/new-clearfix-hack */
+.clearfix:after, .nav:after, .subsection:after, .subsection > div:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+* html .clearfix{zoom: 1;} /* IE6 */
+*:first-child+html .clearfix {zoom: 1;} /* IE7 */
+
+.hidden {background-color: transparent!important; font-size: 1px; left: -9999px; line-height: 0px; margin: 0; padding: 0; position: absolute; width: 9999px;}
+.hidden_text, #header_logo {text-indent: -9999px; overflow: hidden;}
